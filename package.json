@@ -4,20 +4,25 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "apps/**",
+    "common/**",
+    "services/**"
   ],
   "scripts": {
-    "build:services": "cd packages/services && yarn build",
-    "build:common": "cd packages/common && yarn build",
-    "build:shop": "cd packages/common && yarn build",
-    "build:website": "cd packages/common && yarn build",
+    "build:services": "cd services && yarn build",
+    "build:common": "cd common && yarn build",
+    "build:shop": "cd common && yarn build",
+    "build:website": "cd common && yarn build",
     "prebuild:website": "yarn build:common && yarn build:services",
     "prebuild:shop": "yarn build:common && yarn build:services",
     "prewebsite": "yarn build:common && yarn build:services",
     "preshop": "yarn build:common && yarn build:services",
-    "common": "cd packages/common && yarn start",
-    "services": "cd packages/services && yarn start",
-    "website": "cd packages/apps/website && yarn start",
-    "shop": "cd packages/apps/shop && yarn start"
+    "common": "cd common && yarn start",
+    "services": "cd services && yarn start",
+    "website": "cd apps/website && yarn start",
+    "shop": "cd apps/shop && yarn start"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
   }
 }

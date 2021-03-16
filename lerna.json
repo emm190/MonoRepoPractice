@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/**"
+  ],
+  "npmClint": "yarn", 
+  "version": "4.0.0"
+}
