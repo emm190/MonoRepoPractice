@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "apps/**",
-    "common/**",
-    "services/**"
+    "packages/apps/**",
+    "packages/common/**",
+    "packages/services/**"
   ],
   "scripts": {
     "build:services": "cd services && yarn build",
