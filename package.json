@@ -20,6 +20,7 @@
     "common": "cd common && yarn start",
     "services": "cd services && yarn start",
     "website": "cd apps/website && yarn start",
+    "simpleapp": "cd apps/simpleapp && yarn start",
     "shop": "cd apps/shop && yarn start"
   },
   "devDependencies": {
